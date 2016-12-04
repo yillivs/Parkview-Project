@@ -1,0 +1,58 @@
+<html>
+<head lang="EN">
+	<meta charset="utf-8">
+	<title>Parkview Project</title>
+	<!--Bootstrap Core CSS & CSS stylesheet link -->
+	<link href="launchpage.css" rel="stylesheet">
+	<link href="findroom.css" rel="stylesheet">
+	<link href="bootstrap-3.0.0/dist/css/bootstrap.css" rel="stylesheet">
+	<!--External PHP & Javascript files below -->
+
+</head>
+<body>
+	<header>
+		<div id="topRow" class="navbar navbar-inverse">
+			<nav class="container">
+				<a class="navbar-brand" href="launchpage.html"><img src="images/bronco-icon.png" alt="broncos">Welcome to the Elson Floyd Building Directory</a>
+				<ul class="nav navbar-nav navbar-right">
+					<!--Links below must be real and point to separate webpages -->	
+					<li><a href="user-login.html"><span><b class="glyphicon glyphicon-user"></b> Login</span></a></li>
+					<li><a href="findroom.html"><span><b class="glyphicon glyphicon-search"></b> Find Room</span></a></li>
+					<li><a href="about.html"><span><b class="glyphicon glyphicon-info-sign"></b> About</span></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+	    		<h2>Find Room by Course Number</h2>
+				<!--Create form to manipulate user input. Use get to control what happens with input-->
+				<form method="get">
+					<div id="custom-search-input">
+						<div class="input-group col-md-12">
+						<input id="course" type="text" name="crn" class="form-control input-lg" placeholder="Enter CRN" />
+						<span class="input-group-btn">
+		                <button class="btn btn-info btn-lg" type="button">
+		                    <i class="glyphicon glyphicon-search"></i>
+		                </button>
+						</span>
+						</div>
+					</div>
+				</form>
+		</div>
+	</div>
+	</div>
+	<div class="container">
+		<img src="images/FirstFloor/parkview1stFLTemplate.png" alt="first floor">
+	</div>
+<footer class="footer text-center">
+	<div class="container">
+		<small>Property of Dylan Martin and Oliver Sanchez™</small>
+	</div>
+</footer>
+	<!--Bootstrap Core JS, makes page load faster -->
+	<script src="bootstrap-3.0.0/assets/js/jquery.js"></script>	
+	<script src="bootstrap-3.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
